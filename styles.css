@@ -818,6 +818,24 @@ footer {
     margin-top: 20rem;
 }
 
+.footer-credit {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footer-credit a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer-credit a:hover {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .glitch-text {
