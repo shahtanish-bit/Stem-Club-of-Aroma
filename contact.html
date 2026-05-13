@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - STEM Digital School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">STEM Digital School</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="donation.html">Donate</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>LET US HELP YOU FIND THE PERFECT PATH</h1>
+    </section>
+
+    <section class="contact-content">
+        <div class="contact-form-container">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="program">Program Interest</label>
+                    <select id="program" name="program" required>
+                        <option value="">Select a program</option>
+                        <option value="chemistry">Chemistry crash bootcamp</option>
+                        <option value="aerospace">Fundamentals of aerospace engineering</option>
+                        <option value="physics">Physics without pain</option>
+                        <option value="math">Math intensive</option>
+                        <option value="statistics">Statistics intensive</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="cta-button">Get Started →</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Have questions? We're here to help you find the perfect program.</p>
+                <div class="info-item">
+                    <strong>Instagram: </strong> 
+                </div>
+                <div class="info-item">
+                    <a style="text-decoration: none; color: white;" href="/donation.html">
+                        <strong>Donation page: Click here to donate </strong> 
+                    </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 STEM Digital School. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
