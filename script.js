@@ -21,6 +21,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // 3D Logo Tilt Effect
+    const heroLogo = document.querySelector('.hero-logo');
+    if (heroLogo) {
+        const logoImg = heroLogo.querySelector('img');
+        
+        heroLogo.addEventListener('mousemove', function(e) {
+            const rect = heroLogo.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 10;
+            const rotateY = (centerX - x) / 10;
+            
+            logoImg.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+        });
+        
+        heroLogo.addEventListener('mouseleave', function() {
+            logoImg.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+        });
+    }
+    
     // Add smooth scroll behavior
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
